@@ -1,0 +1,162 @@
+% !TeX spellcheck = en_GB
+\documentclass[a4paper,11pt, UKenglish,twoside]{report}
+
+% ********** Preamble: Contains packages and user-defined commands and settings ****************************
+\input{preamble}
+
+
+% ******** Thesis Inforamtion such as Title, author, and date *****
+\makeatletter
+\title{Title of my thesis}	\let\Title\@title
+\author{Firstname Lastname}	\let\Author\@author
+\date{Month Year}		\let\Date\@date
+\makeatother
+
+% ******** to only print particular chapters with references *******
+%\includeonly{title_page,Abstract/abstract,Introduction/introduction,Summary/summary}
+%\includeonly{title_page,Introduction/introduction}
+%\includeonly{Introduction/introduction}
+%\includeonly{%title_page,
+%	Results/results}%,Summary/summary,./Appendix/SWC_1h,./Appendix/all_vert_ens_memb}
+%\includeonly{Data_Instrument_Methods/data_instruments_methods}
+%\includeonly{Weather_Situation/weather_situation}%,Results/results}
+%\includeonly{Summary/summary}
+
+
+
+
+
+\begin{document}
+% ******** Title page ******************
+\pagenumbering{alph} %damit pdftex auch der titelseite eine eindeutige Seitenzahl zuordnen kann
+\setcounter{page}{0}
+\thispagestyle{empty}
+\duoforside[program={Meteorology},
+    dept={Department of Geoscience},
+    fac=Faculty of Mathematics and Natural Sciences,
+    %	  option={Difficult Computations},
+    image={avhrr201612240330.jpg},
+    printer={Reprosentralen, University of Oslo},
+    long,
+    date={June 2018}]
+
+
+% ********** Abstract *****************
+% Use `abstract' as an option in the document class to print only the title page and the abstract.
+\singlespacing
+\begin{abstract}
+    \noindent
+    In the winter, orographic precipitation falls as snow in the mid to high latitudes where it causes avalanches, affects local infrastructure, or leads to flooding during the spring thaw. We present a ...
+\end{abstract}
+\linespread{1.25}
+\thispagestyle{empty}
+\clearpage\thispagestyle{empty}\hbox{}\newpage %whole line needed to insert a blank page
+\normalsize
+
+
+
+
+% ******* Table of contents, List of Figures, Tables **************
+{\hypersetup{linkcolor=black} 	% sets the regularly red color to black
+
+    \newpage
+    \pagenumbering{roman}
+    \setcounter{page}{1}
+    \renewcommand{\contentsname}{Table of Contents}
+    \tableofcontents
+    \thispagestyle{empty}
+
+
+    %    \newpage
+    %    \addcontentsline{toc}{chapter}{List of Figures}
+    %    \listoffigures
+    %    \thispagestyle{empty}
+    %    
+    %    \newpage
+    %    \addcontentsline{toc}{chapter}{List of Tables}
+    % 	\listoftables
+    %	\thispagestyle{empty}
+    %   	
+
+}
+
+
+% ******* Main Matter ********************
+
+\newpage\pagenumbering{arabic}\setcounter{page}{1}
+%%% ***************** CHAPTER INTRODUCTION ***************** %%%
+\chapter{Introduction}
+\label{ch:intro}
+
+Forecasting precipitation quantitatively is challenging, especially in complex terrain where the evaluation of forecast models is difficult due to the sparse distribution of precipitation gauges \citep{barstad_evaluation_2005}. ...
+
+
+\clearpage\thispagestyle{empty}\hbox{}\newpage %whole line needed to insert a blank page
+\include{data_instruments_methods}
+
+\include{results}
+\clearpage\thispagestyle{empty}\hbox{}\newpage %whole line needed to
+\include{summary}
+
+
+% \cleardoublepage
+% %	\clearpage\thispagestyle{empty}\hbox{}\newpage %whole line needed to
+% % ********** List of Abreviations **************
+% \newpage
+% \addcontentsline{toc}{chapter}{List of Abbreviations}
+% \include{Nomenclature/nomenclature}
+% \printnomenclature[1in]              %%% add width here.
+% \thispagestyle{empty}
+
+% %	\clearpage\thispagestyle{empty}\hbox{}\newpage %whole line needed to insert a blank page
+
+% ******* Bibliography *******************************
+%	\clearpage\thispagestyle{empty}\hbox{}\newpage %whole line needed to insert a blank page
+\newpage
+\cleardoublepage
+%	\phantomsection
+\addcontentsline{toc}{chapter}{References}
+\renewcommand{\bibname}{References}
+\bibliography{references}
+\bibliographystyle{plainnat_reversed}
+\newpage
+
+% %\clearpage\thispagestyle{empty}\hbox{}\newpage %whole line needed to insert a
+
+
+% % ******* Appendices *********************************
+% %	\clearpage\thispagestyle{empty}\hbox{}\newpage %whole line needed to insert a blank page
+% %	\pagestyle{plain}
+% %  \begin{appendices}
+% \appendix
+% %   \chapter{}
+
+% %	\include{./Appendix/sounding}
+% \include{./Appendix/B6pr_2_dimensional_and_mass_oriented_24.0GHz}
+
+% %   \chapter{Results}
+% %	\include{./Appendix/surface_obs}
+% %	\include{./Appendix/error_var_sfc}
+% \include{./Appendix/SWC_1h}
+% \include{./Appendix/all_vert_ens_memb}
+
+% % 	\end{appendices}	  	
+
+
+
+
+
+
+% %\clearpage\thispagestyle{empty}\hbox{}\newpage %whole line needed to insert a		
+
+
+% ********** Acknowledgment **************
+\begin{acknowledgement}
+\noindent
+First and foremost, I would like to thank my supervisor, \dots
+\end{acknowledgement}
+% \clearpage\thispagestyle{empty}\hbox{}\newpage %whole line needed to insert a
+
+
+
+\end{document}
