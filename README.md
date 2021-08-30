@@ -7,6 +7,9 @@ In summary, every editor has its own benefits. Any of the two will be fine. You 
 - [Atom documentation](https://atom.io/docs)
 - [LevelUpTuts Atom tutorial](https://www.youtube.com/playlist?list=PLLnpHn493BHHf0w8uGu9NM8LPf498ZvL_) 
 
+- [VS code Introductory](https://code.visualstudio.com/docs/getstarted/introvideos)
+- [LevelUpTuts VS code tutorial](https://www.leveluptutorials.com/tutorials/vscode-tutorials/introduction-to-visual-studio-code)
+
 
 
 
