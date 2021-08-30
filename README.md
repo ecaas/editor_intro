@@ -3,7 +3,12 @@ Good editors can speed up productivity while you develop models or explore data.
 
 The two editors here presented are freely available for Windows, macOS, and Linux. Both have extensions/plug-ins to make the editor more customizable. You can have multiple projects open simultaneously, autocompletion, syntax highlighting, and you can use version control in both editors. 
 
-In summary, every editor has its own benefits. Any of the two will be fine. You still need to get your hands on to get familiar with using the editor. We will give you a quick introduction to Atom and VS code, and several more thorough tutorials are available online *Insert examples of good tutorials*. 
+In summary, every editor has its own benefits. Any of the two will be fine. You still need to get your hands on to get familiar with using the editor. We will give you a quick introduction to Atom and VS code, and several more thorough tutorials are available online: 
+- [Atom documentation](https://atom.io/docs)
+- [LevelUpTuts Atom tutorial](https://www.youtube.com/playlist?list=PLLnpHn493BHHf0w8uGu9NM8LPf498ZvL_) 
+
+
+
 
 ## Why do I use Atom?
 - ... Version control with Git is easy
