@@ -14,7 +14,7 @@ In summary, every editor has its own benefits. Any of the two will be fine. You 
 
 
 ## Why do I use Atom?
-- ... Version control with Git is easy
+- ... Version control with Git is very easy
 - ... I have everything I need in one place (project folder, editor, terminal..)
 - ... It is easy to install useful tools 
 - ... I can easily edit files on the servers/HPCs
